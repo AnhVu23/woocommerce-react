@@ -9,4 +9,21 @@ const getBooks = async () => {
     }
 }
 
-export {getBooks}
+const getBookAuthor = async (id) => {
+    try {
+        const res = await axios.get(`wp-json/wp/v2/users/${id}`)
+        return res.data
+    } catch (e) {
+        throw e
+    }
+}
+
+const getBookMedia = async (id) => {
+    try {
+        const res = await axios.get(`wp-json/wp/v2/media/${id}`)
+        return res.data
+    } catch (e) {
+        throw e
+    }
+}
+export {getBooks, getBookAuthor, getBookMedia}
