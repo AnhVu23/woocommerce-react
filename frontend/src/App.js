@@ -1,7 +1,8 @@
+import Books from './components/Books'
 function App() {
   return (
     <div className="App">
-      <h1>Woocommerce</h1>
+      <Books/>
     </div>
   );
 }
