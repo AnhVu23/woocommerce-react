@@ -1,7 +1,7 @@
 import React from 'react'
 import * as BookServices from '../services/book'
 
-import BookItem from './BookItem'
+import BookItem from '../components/BookItem'
 
 export default () => {
     const [books, setBooks] = React.useState([])
